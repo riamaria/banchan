@@ -31,6 +31,8 @@ config :surface, :components, [
   {Surface.Components.Form.ErrorTag,
    default_translator: {BanchanWeb.ErrorHelpers, :translate_error}}
 ]
+config :ex_aws,
+  region: {:system, "AWS_REGION"}
 
 config :esbuild,
   version: "0.12.18",
