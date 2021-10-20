@@ -10,7 +10,7 @@ defmodule Banchan.Uploads do
       [key: path] ++
         opts ++
         [
-          max_file_size: 100_000_000,
+          max_file_size: 12_000_000,
           content_type: "application/octet-stream",
           expires_in: :timer.minutes(15)
         ]
